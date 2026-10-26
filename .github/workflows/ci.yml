@@ -30,6 +30,8 @@ env:
   # evo-ak from the nightly tag of evo-agents, the newest commit of main whose CI passed, as the plugin template's CI
   # installs it, so the index is checked by the reader hubs get next.
   EVO_AK: evo-ak @ git+https://github.com/maycuatroi1/evo-agents@nightly
+  # The sigstore package checks keyless signatures; evo-ak brings it only with its hub-server extra.
+  SIGSTORE: sigstore==4.5.0
   PYTHON: "3.12"
 
 jobs:
@@ -46,8 +48,8 @@ jobs:
           uv venv --seed --python "$PYTHON" "$RUNNER_TEMP/venv"
           echo "$RUNNER_TEMP/venv/bin" >> "$GITHUB_PATH"
           echo "VIRTUAL_ENV=$RUNNER_TEMP/venv" >> "$GITHUB_ENV"
-      - name: Install evo-ak
-        run: python -m pip install --disable-pip-version-check "$EVO_AK"
+      - name: Install evo-ak and sigstore
+        run: python -m pip install --disable-pip-version-check "$EVO_AK" "$SIGSTORE"
       - name: market.json against plugin-market-v1, and the signed release of each free plugin
         env:
           GITHUB_TOKEN: ${{ github.token }} # reads public releases with the API's higher rate limit
