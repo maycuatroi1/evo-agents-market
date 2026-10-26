@@ -1,0 +1,105 @@
+{
+  "schema": "plugin-market-v1",
+  "name": "evo-agents-market",
+  "title": "evo-agents market",
+  "owner": {"name": "evo-agents", "url": "https://github.com/maycuatroi1/evo-agents-market"},
+  "sellers": [
+    {
+      "id": "omelet",
+      "name": "Omelet",
+      "url": "https://agents.omelet.tech",
+      "keys": [{"key_id": "ed25519:e1861f5480eb1361", "public_key": "bdXfD9WfwMRVi3JNF27XZBZyV+YAikeo7zexzi8+P2o="}]
+    }
+  ],
+  "plugins": [
+    {
+      "id": "crm",
+      "name": "CRM",
+      "description": "The people who found the project themselves: contacts with a stage, from GitHub and the hub.",
+      "industries": ["software-outsourcing", "sales"],
+      "categories": ["contacts"],
+      "repo": "maycuatroi1/evo-agents-core-plugins",
+      "publisher": {"id": "evo-agents", "name": "evo-agents", "signer": "sigstore:maycuatroi1/evo-agents-core-plugins/.github/workflows/release.yml"},
+      "tier": "core",
+      "package": "evo-agents-core-plugins",
+      "price": {"kind": "free"},
+      "icon": "contact",
+      "homepage": "https://github.com/maycuatroi1/evo-agents-core-plugins",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "pm",
+      "name": "PM",
+      "description": "The daily report of a project: done, sprint, late, review, stale, blocked, escalate and load.",
+      "industries": ["software-outsourcing"],
+      "categories": ["project-management"],
+      "repo": "maycuatroi1/evo-agents-core-plugins",
+      "publisher": {"id": "evo-agents", "name": "evo-agents", "signer": "sigstore:maycuatroi1/evo-agents-core-plugins/.github/workflows/release.yml"},
+      "tier": "core",
+      "package": "evo-agents-core-plugins",
+      "price": {"kind": "free"},
+      "icon": "kanban",
+      "homepage": "https://github.com/maycuatroi1/evo-agents-core-plugins",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "description": "Channel accounts and a posting gate: deny-list, source rule, caps, a Judge and a budget, with a breaker for each channel and a kill switch.",
+      "industries": ["software-outsourcing", "sales"],
+      "categories": ["marketing"],
+      "repo": "maycuatroi1/evo-agents-core-plugins",
+      "publisher": {"id": "evo-agents", "name": "evo-agents", "signer": "sigstore:maycuatroi1/evo-agents-core-plugins/.github/workflows/release.yml"},
+      "tier": "core",
+      "package": "evo-agents-core-plugins",
+      "price": {"kind": "free"},
+      "icon": "megaphone",
+      "homepage": "https://github.com/maycuatroi1/evo-agents-core-plugins",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram",
+      "description": "The hub's Telegram channel: members link a chat from the web and answer decisions and proposals.",
+      "industries": ["software-outsourcing"],
+      "categories": ["messaging"],
+      "repo": "maycuatroi1/evo-agents-core-plugins",
+      "publisher": {"id": "evo-agents", "name": "evo-agents", "signer": "sigstore:maycuatroi1/evo-agents-core-plugins/.github/workflows/release.yml"},
+      "tier": "core",
+      "package": "evo-agents-core-plugins",
+      "price": {"kind": "free"},
+      "icon": "send",
+      "homepage": "https://github.com/maycuatroi1/evo-agents-core-plugins",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "chats",
+      "name": "Chat history",
+      "description": "The messages of the hub's group chats in the project's knowledge graph, for who is in each chat.",
+      "industries": ["software-outsourcing"],
+      "categories": ["messaging", "knowledge"],
+      "repo": "maycuatroi1/evo-agents-core-plugins",
+      "publisher": {"id": "evo-agents", "name": "evo-agents", "signer": "sigstore:maycuatroi1/evo-agents-core-plugins/.github/workflows/release.yml"},
+      "tier": "core",
+      "package": "evo-agents-core-plugins",
+      "price": {"kind": "free"},
+      "icon": "messages-square",
+      "homepage": "https://github.com/maycuatroi1/evo-agents-core-plugins",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "lumen-hello",
+      "name": "Lumen hello",
+      "description": "The sample plugin of evo-plugin-template: a page where members leave a wave, a route and an MCP tool that greets by name.",
+      "industries": ["software-outsourcing"],
+      "categories": ["messaging"],
+      "repo": "maycuatroi1/evo-plugin-template",
+      "publisher": {"id": "lumen", "name": "Lumen Labs", "signer": "sigstore:maycuatroi1/evo-plugin-template/.github/workflows/ci.yml"},
+      "tier": "isolated",
+      "price": {"kind": "free"},
+      "icon": "message-square",
+      "homepage": "https://github.com/maycuatroi1/evo-plugin-template",
+      "license": "Apache-2.0"
+    }
+  ]
+}
