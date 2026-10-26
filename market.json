@@ -100,6 +100,20 @@
       "icon": "message-square",
       "homepage": "https://github.com/maycuatroi1/evo-plugin-template",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "acceptance-docs",
+      "name": "Acceptance docs",
+      "description": "テスト仕様書 and エビデンス as .xlsx for Japanese clients: test cases from approved SRS use cases, evidence from the verify output of finished plan steps. A page to pick the plan and download, and MCP tools for agents.",
+      "industries": ["software-outsourcing-japan"],
+      "categories": ["qa", "reporting"],
+      "repo": "maycuatroi1/acceptance-docs",
+      "publisher": {"id": "maycuatroi1", "name": "maycuatroi1", "signer": "sigstore:maycuatroi1/acceptance-docs/.github/workflows/ci.yml"},
+      "tier": "isolated",
+      "price": {"kind": "subscription", "usd_per_hub_month": 19, "seller": "omelet"},
+      "icon": "table",
+      "homepage": "https://github.com/maycuatroi1/acceptance-docs",
+      "license": "Apache-2.0"
     }
   ]
 }
